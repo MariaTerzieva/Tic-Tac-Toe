@@ -1,6 +1,6 @@
 class TicTacToeController < ApplicationController
 
-  def dashboard
+  def board
   end
 
   def index
