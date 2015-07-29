@@ -1,0 +1,73 @@
+/* for the board to appear like a board*/
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  width: 390px; /* set the width of the container */
+  margin: 0 auto; /* for the container to be centered */
+  text-align: center; /* for the text in the container to be centered */
+}
+
+/* for the current player message */
+.message {
+  padding: 10px;
+  font-size: 18px;
+}
+
+/* for the game over message */
+.end-message {
+  font-size: 26px;
+  color: #6bb565;
+}
+
+/* for the play again button */
+.play-again {
+  padding: 10px 20px; /* for the button to be a certain size */
+  width: 100%; /* for the button to be the size of the board */
+  font-size: 26px;
+  border: 1px solid #fff;
+  color: #fff;
+  /* gradient of the button */
+  background: -webkit-linear-gradient(#a1d3b0, #6bb565);
+  background:    -moz-linear-gradient(#a1d3b0, #6bb565);
+  background:         linear-gradient(#a1d3b0, #6bb565);
+  /* for the button to appear rounded */
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+  /* for the button to be displayed only when the game is over */
+  display: none;
+}
+
+.play-again:hover {
+  /* for the gradient to change when the player hovers over the button */
+  background: -webkit-linear-gradient(#6bb565, #a1d3b0);
+  background:    -moz-linear-gradient(#6bb565, #a1d3b0);
+  background:         linear-gradient(#6bb565, #a1d3b0);
+}
+
+.square {
+  width: 130px;
+  height: 130px;
+  float: left; /* for the cells to appear like a board */
+  font-size: 80px;
+  line-height: 130px; /* for the sign in the cell to be centered */
+}
+
+/* draw the columns of the board */
+.r-border {
+  border-right: 1px solid #333;
+}
+
+/* draw the rows of the board */
+.b-border {
+  border-bottom: 1px solid #333;
+}
+
+/* color the signs in the winning cells in another color */
+.winning-square {
+  color: #6bb565;
+}
