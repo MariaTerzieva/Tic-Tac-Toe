@@ -25,6 +25,7 @@
 
 /* for the play again button */
 .play-again {
+  margin-top: 10px;
   padding: 10px 20px; /* for the button to be a certain size */
   width: 100%; /* for the button to be the size of the board */
   font-size: 26px;
