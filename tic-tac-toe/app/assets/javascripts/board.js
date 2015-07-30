@@ -79,17 +79,17 @@ $(document).ready(function() {
       if($.isArray(endFormation)) {
         endMessage = 'Game Over. Player ' + curPlayer.Name + ' Wins';
         showWinFormation(endFormation);
+        $.ajax({
+          url: "save/?winner=" + curPlayer.Name,
+          type: "post",
+          success: function() {
+            document.location = '/leaderboard';
+          }
+        });
       } else {
         endMessage = 'Game Over. Draw Game';
+        document.location = '/draw';
       }
-      $('.message').addClass('end-message');
-      displayMessage(endMessage);
-
-      // Turn off gameboard click listener
-      $('.gameboard').off('click');
-      $('.play-again').show().on('click', function() {
-        location.reload();
-      });
     };
 
     // Add a class to highlight the squares that form a winning formation
