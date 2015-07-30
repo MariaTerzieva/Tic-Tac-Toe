@@ -7,11 +7,11 @@
     <%= form_tag "/init" do %>
       <div class="field">
         <p>X Player Name:</p>
-        <%= text_field_tag "player_x_name" %>
+        <%= text_field_tag "player_x_name", "X" %>
       </div>
       <div class="field">
         <p>O Player Name:</p>
-        <%= text_field_tag "player_o_name" %>
+        <%= text_field_tag "player_o_name", "O" %>
       </div>
       <div class="submit-button">
         <%= submit_tag "Save" %>
