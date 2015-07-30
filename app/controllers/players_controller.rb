@@ -11,7 +11,7 @@ class PlayersController < ApplicationController
   end
 
   def leaderboard
-    @players = Player.all
+    @players = Player.order(number_of_wins: :desc)
   end
 
   def draw
