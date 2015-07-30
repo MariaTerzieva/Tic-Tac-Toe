@@ -10,26 +10,6 @@ input {
   padding-left: 10px;
 }
 
-.submit-button input {
+input[type="submit"] {
   margin-top: 20px;
-  padding: 10px 20px; /* for the button to be a certain size */
-  width: 183px; /* for the button to be the size of the board */
-  font-size: 26px;
-  border: 1px solid #fff;
-  color: #fff;
-  /* gradient of the button */
-  background: -webkit-linear-gradient(#a1d3b0, #6bb565);
-  background:    -moz-linear-gradient(#a1d3b0, #6bb565);
-  background:         linear-gradient(#a1d3b0, #6bb565);
-  /* for the button to appear rounded */
-  -webkit-border-radius: 5px;
-     -moz-border-radius: 5px;
-          border-radius: 5px;
-}
-
-.submit-button input:hover {
-  /* for the gradient to change when the player hovers over the button */
-  background: -webkit-linear-gradient(#6bb565, #a1d3b0);
-  background:    -moz-linear-gradient(#6bb565, #a1d3b0);
-  background:         linear-gradient(#6bb565, #a1d3b0);
 }
