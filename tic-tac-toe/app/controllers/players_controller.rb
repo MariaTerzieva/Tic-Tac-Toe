@@ -1,12 +1,12 @@
 class PlayersController < ApplicationController
   def save
-    @player = Player.find_by(name: params[:winner])
+    player = Player.find_by(name: params[:winner])
 
-    if @player
-      @player.update(number_of_wins: @player.number_of_wins.succ)
+    if player
+      player.update(number_of_wins: player.number_of_wins.succ)
     else
-      @player = Player.new(name: params[:winner], number_of_wins: 1)
-      @player.save
+      player = Player.new(name: params[:winner], number_of_wins: 1)
+      player.save
     end
   end
 

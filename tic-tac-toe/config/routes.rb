@@ -1,12 +1,12 @@
 Rails.application.routes.draw do
 
-  root :to => 'tic_tac_toe#index'
-  get '/init' => 'tic_tac_toe#init'
-  post '/init' => 'tic_tac_toe#board'
+  root 'tic_tac_toe#index'
+  get '/init', to: 'tic_tac_toe#init'
+  post '/init', to: 'tic_tac_toe#board'
 
-  post '/save' => 'players#save'
-  get '/leaderboard' => 'players#leaderboard'
-  get '/draw' => 'players#draw'
+  post '/save', to: 'players#save'
+  get '/leaderboard', to:'players#leaderboard'
+  get '/draw', to: 'players#draw'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

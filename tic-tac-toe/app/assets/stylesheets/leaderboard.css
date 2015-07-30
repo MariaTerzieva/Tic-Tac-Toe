@@ -1,45 +1,45 @@
 table {
-  font-family:Arial, Helvetica, sans-serif;
-  color:#7ec394;
-  font-size:12px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #7ec394;
+  font-size: 12px;
   text-shadow: 1px 1px 0px #fff;
-  background:#eaebec;
-  border:#b2dbbf 1px solid;
+  background: #eaebec;
+  border: #b2dbbf 1px solid;
   margin: 0 auto;
   text-align: center;
   border-spacing: 0;
 
-  -moz-border-radius:3px;
-  -webkit-border-radius:3px;
-  border-radius:3px;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
 
-  -moz-box-shadow: 0 1px 2px #d1d1d1;
   -webkit-box-shadow: 0 1px 2px #d1d1d1;
-  box-shadow: 0 1px 2px #d1d1d1;
+     -moz-box-shadow: 0 1px 2px #d1d1d1;
+          box-shadow: 0 1px 2px #d1d1d1;
 }
 
 table th {
-  padding:21px 25px 22px 25px;
-  border-bottom:1px solid #b2dbbf;
+  padding: 21px 25px 22px 25px;
+  border-bottom: 1px solid #b2dbbf;
   background: #b2dbbf;
   color: #777;
   font-weight: normal;
 }
 
-table th:first-child{
+table th:first-child {
   text-align: left;
-  padding-left:20px;
+  padding-left: 20px;
 }
 
-table tr td:first-child{
+table tr td:first-child {
   text-align: left;
-  padding-left:20px;
+  padding-left: 20px;
   border-left: 0;
 }
 
 table tr td {
-  padding:18px;
-  border-bottom:1px solid #b2dbbf;
+  padding: 18px;
+  border-bottom: 1px solid #b2dbbf;
   border-left: 1px solid #b2dbbf;
   
   background: #fafafa;
@@ -47,6 +47,6 @@ table tr td {
   background: -moz-linear-gradient(top,  #fbfbfb,  #fafafa);
 }
 
-table tr:last-child td{
-  border-bottom:0;
+table tr:last-child td {
+  border-bottom: 0;
 }

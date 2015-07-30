@@ -1,19 +1,17 @@
-<head>
-  <title>Tic Tac Toe</title>
-</head>
-<body>
-  <div class="container">
-    <h1>Tic Tac Toe</h1>
-    <%= form_tag "/init" do %>
-      <div class="field">
-        <p>X Player Name:</p>
-        <%= text_field_tag "player_x_name", "X" %>
-      </div>
-      <div class="field">
-        <p>O Player Name:</p>
-        <%= text_field_tag "player_o_name", "O" %>
-      </div>
-      <%= submit_tag "Save", class: "button" %>
-    <% end %>
-  </div>
-</body>
+<div class="container">
+  <h1>Tic Tac Toe</h1>
+
+  <%= form_tag "/init" do %>
+    <div class="field">
+      <p>X Player Name:</p>
+      <%= text_field_tag "player_x_name", "X" %>
+    </div>
+
+    <div class="field">
+      <p>O Player Name:</p>
+      <%= text_field_tag "player_o_name", "O" %>
+    </div>
+
+    <%= submit_tag "Save", class: "button" %>
+  <% end %>
+</div>
