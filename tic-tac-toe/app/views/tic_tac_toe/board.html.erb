@@ -5,7 +5,9 @@
   <div class="container">
     <h1>Tic Tac Toe</h1>
 
-    <div class="message">Current Player: X</div>
+    <div class="message">Current Player: <%= params[:player_x_name] %></div>
+    <%= content_tag :div, class: "players", data: {player_x: params[:player_x_name], player_o: params[:player_o_name]} do %>
+    <%end%>
 
     <div class="gameboard">
       <div id="0" class="square r-border b-border"></div>
