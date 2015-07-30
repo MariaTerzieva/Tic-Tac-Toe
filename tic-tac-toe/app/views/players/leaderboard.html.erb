@@ -1,23 +1,25 @@
-<h1>Leaderboard</h1>
+<div class="container">
+  <h1>Leaderboard</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Number of Wins</th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @players.each do |player| %>
+  <table>
+    <thead>
       <tr>
-        <td><%= player.name %></td>
-        <td><%= player.number_of_wins %></td>
+        <th>Name</th>
+        <th>Number of Wins</th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
 
-<br>
+    <tbody>
+      <% @players.each do |player| %>
+        <tr>
+          <td><%= player.name %></td>
+          <td><%= player.number_of_wins %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
 
-<%= link_to 'New Game', root_url %>
+  <br>
+
+  <%= button_to "New Game", root_path, method: :get, class: "new-game" %>
+</div>
