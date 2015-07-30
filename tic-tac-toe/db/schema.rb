@@ -11,11 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150729143726) do
+ActiveRecord::Schema.define(version: 20150730172528) do
 
   create_table "players", force: :cascade do |t|
     t.string  "name"
-    t.integer "number_of_wins"
+    t.integer "number_of_wins", default: 0
   end
 
 end
