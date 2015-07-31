@@ -1,0 +1,31 @@
+david:
+  name: David
+  number_of_wins: 10
+
+jonathan:
+  name: Jonathan
+  number_of_wins: 1
+
+rebekah:
+  name: Rebekah
+  number_of_wins: 1
+
+esther:
+  name: Esther
+  number_of_wins: 5
+
+isaac:
+  name: Isaac
+  number_of_wins: 7
+
+joseph:
+  name: Joseph
+  number_of_wins: 8
+
+ruth:
+  name: Ruth
+  number_of_wins: 4
+
+naomi:
+  name: Naomi
+  number_of_wins: 11
