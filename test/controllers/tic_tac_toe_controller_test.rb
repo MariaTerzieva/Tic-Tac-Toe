@@ -29,5 +29,14 @@ class TicTacToeControllerTest < ActionController::TestCase
     post :board, {player_x_name: "Mark", player_o_name: "Luke"}
     assert_not_nil assigns(:player_x_name)
     assert_not_nil assigns(:player_o_name)
+
+    assert_select '.container' do
+      assert_select 'h1'
+      assert_select '.message'
+      assert_select '.gameboard' do
+        assert_select '.square'
+      end
+    end
+      assert_select '.players'
   end
 end
