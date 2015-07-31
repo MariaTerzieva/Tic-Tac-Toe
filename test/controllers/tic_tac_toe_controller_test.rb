@@ -37,6 +37,7 @@ class TicTacToeControllerTest < ActionController::TestCase
         assert_select '.square'
       end
     end
-      assert_select '.players'
+
+    assert_select '.players'
   end
 end
