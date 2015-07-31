@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   root 'tic_tac_toe#index'
   get '/init', to: 'tic_tac_toe#init'
-  post '/init', to: 'tic_tac_toe#board'
+  post '/board', to: 'tic_tac_toe#board'
 
   post '/save', to: 'players#save'
   get '/leaderboard', to:'players#leaderboard'
