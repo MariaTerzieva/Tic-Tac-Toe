@@ -4,12 +4,23 @@ class PlayersControllerTest < ActionController::TestCase
   test "should get draw" do
     get :draw
     assert_response :success
+
+    assert_select '.container' do
+      assert_select 'h1'
+      assert_select '.button'
+    end
   end
 
   test "should get leaderboard" do
     get :leaderboard
     assert_response :success
     assert_not_nil assigns(:players)
+
+    assert_select '.container' do
+      assert_select 'h1'
+      assert_select 'table'
+      assert_select '.button'
+    end
   end
 
   test "should update winner's number of wins" do
