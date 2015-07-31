@@ -7,6 +7,7 @@ How to use the web application:
   in your terminal
 * Run `cd Tic-Tac-Toe`
 * Run `bundle install`
+* Run the tests with `rake test`
 * Run `rails s`
 * In your browser (preferably Google Chrome) go to http://localhost:3000
 * Enjoy!
