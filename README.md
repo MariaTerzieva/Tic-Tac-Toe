@@ -13,3 +13,5 @@ How to use the web application:
 * Enjoy!
 
 Rails version: 4.2.1
+
+You can access the documentation by opening Tic-Tac-Toe/html/index.html in your browser.
